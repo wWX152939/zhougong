@@ -40,7 +40,7 @@ public class PictureFragment extends BaseFragment {
 
 	private FolderImageAdapter mFolderImageAdapter;
 	private AbPullToRefreshView mAbPullToRefreshView;
-	private int mCurrentPage = 0;
+	private int mCurrentPage = 1;
 	@Override
 	public void setupUiEvents() {
 		mGridView.setOnItemClickListener(new OnItemClickListener() {
@@ -49,7 +49,8 @@ public class PictureFragment extends BaseFragment {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				Intent intent = new Intent(getActivity(), PictureShowActivity.class);
-				intent.putExtra("position", (mCurrentPage - 1) * 10 + position + 1);
+//				intent.putExtra("position", (mCurrentPage) * 10 + position + 1);
+				intent.putExtra("obj", (String)mFolderImageAdapter.getItem(position));
 				startActivity(intent);
 			}
 		});
