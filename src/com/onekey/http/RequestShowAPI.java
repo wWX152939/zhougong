@@ -21,7 +21,7 @@ public class RequestShowAPI {
 		return mClassCloudManager;
 	}
 	
-	public void getInfo(final CloudInterface cloudInterface, String timestamp, int page) {
+	public void getInfo(final CloudInterface cloudInterface, String timestamp, int page, int num) {
 		NetworkAsyncTask networkAsyncTask = new NetworkAsyncTask(new DataManagerInterface() {
 			
 			@Override
@@ -39,7 +39,7 @@ public class RequestShowAPI {
 				}
 			}
 		});
-		String url = URL_PIC + "?num=10&page=" + page + "&rand=1&showapi_appid=52718&showapi_test_draft=false&showapi_timestamp=" + timestamp + "&showapi_sign=dc53a00937ef467992c7adbc505448cf";
+		String url = URL_PIC + "?num=" + num + "&page=" + page + "&rand=1&showapi_appid=52718&showapi_test_draft=false&showapi_timestamp=" + timestamp + "&showapi_sign=dc53a00937ef467992c7adbc505448cf";
 		networkAsyncTask.setUrl(url).setRequestType(NetworkAsyncTask.TYPE_GET).execute();
 	}
 }

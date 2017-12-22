@@ -27,6 +27,9 @@
         <activity
             android:name="com.onekey.zhougongjiemeng.ZhouGongActivity" >
         </activity>
+        <activity
+            android:name="com.onekey.leftfragment.PictureShowActivity" >
+        </activity>
     </application>
 
 </manifest>
