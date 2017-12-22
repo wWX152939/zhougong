@@ -100,6 +100,7 @@ public class MainActivity extends AbActivity {
 					ft.add(R.id.container, fragment);
 				}
                 ft.commit();
+                menu.showContent();
 			}
 		});
 		// menuÊÓÍ¼µÄFragmentÌí¼Ó
