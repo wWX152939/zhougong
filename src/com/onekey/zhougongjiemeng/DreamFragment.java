@@ -78,76 +78,76 @@ public class DreamFragment extends BaseFragment {
 		switch(mPosition) {
 		case 0:
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "xingzou"));
-			//ÈËÎïÀà
+			//äººç‰©ç±»
 			break;
 		case 1:
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "mao"));
 			bean2 = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "gou"));
 			bean.getResult().addAll(bean2.getResult());
-			//¶¯ÎïÀà
+			//åŠ¨ç‰©ç±»
 			break;
 		case 2:
-			//ÓéÀÖÀà
+			//å¨±ä¹ç±»
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "yinyue"));
 			break;
 		case 3:
-			//×Ú½ÌÀà
+			//å®—æ•™ç±»
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "zongjiao"));
 			break;
 		case 4:
-			//É½Ë®Àà
+			//å±±æ°´ç±»
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "dahai"));
 			break;
 		case 5:
-			//½¨ÖşÀà
+			//å»ºç­‘ç±»
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "gaolou"));
 			break;
 		case 6:
-			//¿Ö²ÀÀà
+			//ææ€–ç±»
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "chiren"));
 			break;
 		case 7:
-			//Çé°®Àà
+			//æƒ…çˆ±ç±»
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "shuijiao"));
 			break;
 		case 8:
-			//"Ö²ÎïÀà", 
+			//"æ¤ç‰©ç±»", 
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "hua"));
 			break;
 		case 9:
-			//"»î¶¯Àà",
+			//"æ´»åŠ¨ç±»",
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "changge"));
 			break;
 		case 10:
-			// "ÎïÆ·Àà", 
+			// "ç‰©å“ç±»", 
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "che"));
 			break;
 		case 11:
-			//"Éú»îÀà",
+			//"ç”Ÿæ´»ç±»",
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "chaoshi"));
 			break;
 		case 12:
-			// "¼²²¡Àà", 
+			// "ç–¾ç—…ç±»", 
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "shengbing"));
 			break;
 		case 13:
-			//"×ÔÈ»Àà", 
+			//"è‡ªç„¶ç±»", 
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "chuntian"));
 			break;
 		case 14:
-			//"ÉíÌåÀà",
+			//"èº«ä½“ç±»",
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "rufang"));
 			break;
 		case 15:
-			// "ÔË¶¯Àà", 
+			// "è¿åŠ¨ç±»", 
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "lanqiu"));
 			break;
 		case 16:
-			//"Ê³ÎïÀà",
+			//"é£Ÿç‰©ç±»",
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "xiangjiao"));
 			break;
 		case 17:
-			//"¹íÉñÀà"
+			//"é¬¼ç¥ç±»"
 			bean = (DreamBean) DataUtils.getObject(DreamBean.class, JsonDreamBean.readAssetsTxt(mActivity, "gui"));
 			break;
 		}
@@ -189,8 +189,8 @@ public class DreamFragment extends BaseFragment {
 			TextView tvContent = (TextView)convertView.findViewById(R.id.content);
 			
 			if (mDreamBean.getResult() == null) {
-				tvTitle.setText("Êı¾İÎª¿Õ");
-				tvContent.setText("ºÜ±§Ç¸£¡Ã»ÓĞ²éÑ¯µ½ÏëÒªµÄ½á¹û£¡");
+				tvTitle.setText("æ•°æ®ä¸ºç©º");
+				tvContent.setText("å¾ˆæŠ±æ­‰ï¼æ²¡æœ‰æŸ¥è¯¢åˆ°æƒ³è¦çš„ç»“æœï¼");
 			} else {
 				tvTitle.setText(mDreamBean.getResult().get(position).getTitle());
 				List list = mDreamBean.getResult().get(position).getList();

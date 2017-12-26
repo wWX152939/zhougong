@@ -65,7 +65,6 @@ public class FolderImageAdapter extends BaseAdapter {
 	}
 
 
-	// œ‘ æÕº∆¨µƒ≈‰÷√
 	DisplayImageOptions options = new DisplayImageOptions.Builder()
 			.showImageOnLoading(R.drawable.image_loading).cacheInMemory(true).cacheOnDisk(true)
 			.bitmapConfig(Bitmap.Config.RGB_565).build();

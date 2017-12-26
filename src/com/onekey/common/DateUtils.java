@@ -9,32 +9,32 @@ import android.app.Activity;
 
 public final class DateUtils {
 	/**
-     * Ó¢ÎÄ¼òĞ´£¨Ä¬ÈÏ£©Èç£º2010-12-01
+     * è‹±æ–‡ç®€å†™ï¼ˆé»˜è®¤ï¼‰å¦‚ï¼š2010-12-01
      */
     public static String FORMAT_SHORT = "yyyy-MM-dd";
     /**
-     * Ó¢ÎÄÈ«³Æ Èç£º2010-12-01 23:15:06
+     * è‹±æ–‡å…¨ç§° å¦‚ï¼š2010-12-01 23:15:06
      */
     public static String FORMAT_LONG = "yyyy-MM-dd HH:mm:ss";
     public static String FORMAT_LONG1 = "yyyy-MM-dd HH:mm";
     /**
-     * ¾«È·µ½ºÁÃëµÄÍêÕûÊ±¼ä Èç£ºyyyy-MM-dd HH:mm:ss.S
+     * ç²¾ç¡®åˆ°æ¯«ç§’çš„å®Œæ•´æ—¶é—´ å¦‚ï¼šyyyy-MM-dd HH:mm:ss.S
      */
     public static String FORMAT_FULL = "yyyy-MM-dd HH:mm:ss.S";
     public static String FORMAT_FULL_2 = "yyyyMMddHHmmss";
     /**
-     * ÖĞÎÄ¼òĞ´ Èç£º2010Äê12ÔÂ01ÈÕ
+     * ä¸­æ–‡ç®€å†™ å¦‚ï¼š2010å¹´12æœˆ01æ—¥
      */
-    public static String FORMAT_SHORT_CN = "yyyyÄêMMÔÂdd";
+    public static String FORMAT_SHORT_CN = "yyyyå¹´MMæœˆdd";
     public static String FORMAT_SHORT_TIME = "HH:mm:ss";
     /**
-     * ÖĞÎÄÈ«³Æ Èç£º2010Äê12ÔÂ01ÈÕ 23Ê±15·Ö06Ãë
+     * ä¸­æ–‡å…¨ç§° å¦‚ï¼š2010å¹´12æœˆ01æ—¥ 23æ—¶15åˆ†06ç§’
      */
-    public static String FORMAT_LONG_CN = "yyyyÄêMMÔÂddÈÕ  HHÊ±mm·ÖssÃë";
+    public static String FORMAT_LONG_CN = "yyyyå¹´MMæœˆddæ—¥  HHæ—¶mmåˆ†ssç§’";
     /**
-     * ¾«È·µ½ºÁÃëµÄÍêÕûÖĞÎÄÊ±¼ä
+     * ç²¾ç¡®åˆ°æ¯«ç§’çš„å®Œæ•´ä¸­æ–‡æ—¶é—´
      */
-    public static String FORMAT_FULL_CN = "yyyyÄêMMÔÂddÈÕ  HHÊ±mm·ÖssÃëSSSºÁÃë";
+    public static String FORMAT_FULL_CN = "yyyyå¹´MMæœˆddæ—¥  HHæ—¶mmåˆ†ssç§’SSSæ¯«ç§’";
 
 	
 	public static SimpleDateFormat mFormatter = new SimpleDateFormat("yyyy-MM-dd");
@@ -120,7 +120,7 @@ public final class DateUtils {
 	}
 	
 	/*
-	 * ÊÇ·ñÍ¬Ò»Ìì
+	 * æ˜¯å¦åŒä¸€å¤©
 	 */
 	public static boolean isSameDate(Date date1, Date date2) {
         Calendar cal1 = Calendar.getInstance();
@@ -137,7 +137,7 @@ public final class DateUtils {
     }  
 	
 	/*
-	 * ÊÇ·ñÍ¬Ò»ÄêµÄÍ¬Ò»ÔÂ
+	 * æ˜¯å¦åŒä¸€å¹´çš„åŒä¸€æœˆ
 	 */
 	public static boolean isSameMonth(Date date1, Date date2) {
         Calendar cal1 = Calendar.getInstance();
@@ -153,7 +153,7 @@ public final class DateUtils {
     }    
 
 	/*
-	 * ÊÇ·ñÍ¬Ò»ÄêµÄÍ¬Ò»ÖÜ
+	 * æ˜¯å¦åŒä¸€å¹´çš„åŒä¸€å‘¨
 	 */
 	public static boolean isSameWeek(Date date1, Date date2) {
         Calendar cal1 = Calendar.getInstance();

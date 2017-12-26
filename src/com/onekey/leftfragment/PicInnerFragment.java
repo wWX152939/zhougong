@@ -53,7 +53,7 @@ public class PicInnerFragment extends BaseFragment {
 		lp.height = mnLayoutheigth;
 //		mPhotoView.setScaleType(ScaleType.FIT_CENTER);
 //		mPhotoView.setLayoutParams(lp);
-		// ÏÔÊ¾Í¼Æ¬µÄÅäÖÃ
+		// æ˜¾ç¤ºå›¾ç‰‡çš„é…ç½®
 		DisplayImageOptions options = new DisplayImageOptions.Builder()
 				.showImageOnLoading(R.drawable.image_loading).cacheInMemory(true).cacheOnDisk(true)
 				.bitmapConfig(Bitmap.Config.RGB_565).build();

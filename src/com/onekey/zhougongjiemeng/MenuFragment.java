@@ -44,7 +44,7 @@ public class MenuFragment extends BaseFragment {
 	@Override
 	public void setupUiHandlers() {
 		mListView = (ListView)mView.findViewById(R.id.lv);
-		String[] arrays = new String[]{"周公解梦", "美图", "搞笑gif", "关于"};
+		String[] arrays = new String[]{"鍛ㄥ叕瑙ｆⅵ", "缇庡浘", "鎼炵瑧gif", "鍏充簬"};
 		mListView.setAdapter(new ArrayAdapter<String>(mActivity, R.layout.list_item_menu, arrays));
 		mListView.setOnItemClickListener(new OnItemClickListener() {
 

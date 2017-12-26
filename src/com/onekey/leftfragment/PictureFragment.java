@@ -80,7 +80,7 @@ public class PictureFragment extends BaseFragment {
 					}
 					mFolderImageAdapter.notifyDataSetChanged();
 				} else {
-					AbToastUtil.showToast(mActivity, "ÍøÂçÒì³£");
+					AbToastUtil.showToast(mActivity, "ç½‘ç»œå¼‚å¸¸");
 				}
 
 				mAbPullToRefreshView.onFooterLoadFinish();

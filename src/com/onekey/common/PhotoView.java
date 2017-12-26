@@ -52,7 +52,7 @@ public class PhotoView extends ImageView {
 	private boolean isEnable = false;
 	private boolean isInit;
 	private boolean mAdjustViewBounds;
-	// µ±Ç°ÊÇ·ñ´¦ÓÚ·Å´ó×´Ì¬
+	// å½“å‰æ˜¯å¦å¤„äºæ”¾å¤§çŠ¶æ€
 	private boolean isZoonUp;
 	private boolean canRotate;
 
@@ -120,7 +120,7 @@ public class PhotoView extends ImageView {
 	}
 
 	/**
-	 * »ñÈ¡Ä¬ÈÏµÄ¶¯»­³ÖĞøÊ±¼ä
+	 * è·å–é»˜è®¤çš„åŠ¨ç”»æŒç»­æ—¶é—´
 	 */
 	public int getDefaultAnimaDuring() {
 		return ANIMA_DURING;
@@ -151,49 +151,49 @@ public class PhotoView extends ImageView {
 	}
 
 	/**
-	 * ÉèÖÃ¶¯»­µÄ²åÈëÆ÷
+	 * è®¾ç½®åŠ¨ç”»çš„æ’å…¥å™¨
 	 */
 	public void setInterpolator(Interpolator interpolator) {
 		mTranslate.setInterpolator(interpolator);
 	}
 
 	/**
-	 * »ñÈ¡¶¯»­³ÖĞøÊ±¼ä
+	 * è·å–åŠ¨ç”»æŒç»­æ—¶é—´
 	 */
 	public int getAnimaDuring() {
 		return mAnimaDuring;
 	}
 
 	/**
-	 * ÉèÖÃ¶¯»­µÄ³ÖĞøÊ±¼ä
+	 * è®¾ç½®åŠ¨ç”»çš„æŒç»­æ—¶é—´
 	 */
 	public void setAnimaDuring(int during) {
 		mAnimaDuring = during;
 	}
 
 	/**
-	 * ÉèÖÃ×î´ó¿ÉÒÔËõ·ÅµÄ±¶Êı
+	 * è®¾ç½®æœ€å¤§å¯ä»¥ç¼©æ”¾çš„å€æ•°
 	 */
 	public void setMaxScale(float maxScale) {
 		mMaxScale = maxScale;
 	}
 
 	/**
-	 * »ñÈ¡×î´ó¿ÉÒÔËõ·ÅµÄ±¶Êı
+	 * è·å–æœ€å¤§å¯ä»¥ç¼©æ”¾çš„å€æ•°
 	 */
 	public float getMaxScale() {
 		return mMaxScale;
 	}
 
 	/**
-	 * ÆôÓÃËõ·Å¹¦ÄÜ
+	 * å¯ç”¨ç¼©æ”¾åŠŸèƒ½
 	 */
 	public void enable() {
 		isEnable = true;
 	}
 
 	/**
-	 * ½ûÓÃËõ·Å¹¦ÄÜ
+	 * ç¦ç”¨ç¼©æ”¾åŠŸèƒ½
 	 */
 	public void disenable() {
 		isEnable = false;
@@ -282,14 +282,14 @@ public class PhotoView extends ImageView {
 
 		mBaseRect.set(0, 0, imgw, imgh);
 
-		// ÒÔÍ¼Æ¬ÖĞĞÄµã¾ÓÖĞÎ»ÒÆ
+		// ä»¥å›¾ç‰‡ä¸­å¿ƒç‚¹å±…ä¸­ä½ç§»
 		int tx = (w - imgw) / 2;
 		int ty = (h - imgh) / 2;
 
 		float sx = 1;
 		float sy = 1;
 
-		// Ëõ·Å£¬Ä¬ÈÏ²»³¬¹ıÆÁÄ»´óĞ¡
+		// ç¼©æ”¾ï¼Œé»˜è®¤ä¸è¶…è¿‡å±å¹•å¤§å°
 		if (imgw > w) {
 			sx = (float) w / imgw;
 		}
@@ -726,7 +726,7 @@ public class PhotoView extends ImageView {
 	}
 
 	/**
-	 * Æ¥ÅäÁ½¸öRectµÄ¹²Í¬²¿·ÖÊä³öµ½out£¬ÈôÎŞ¹²Í¬²¿·ÖÔòÊä³ö0£¬0£¬0£¬0
+	 * åŒ¹é…ä¸¤ä¸ªRectçš„å…±åŒéƒ¨åˆ†è¾“å‡ºåˆ°outï¼Œè‹¥æ— å…±åŒéƒ¨åˆ†åˆ™è¾“å‡º0ï¼Œ0ï¼Œ0ï¼Œ0
 	 */
 	private void mapRect(RectF r1, RectF r2, RectF out) {
 
@@ -1153,7 +1153,7 @@ public class PhotoView extends ImageView {
 			} else {
 				isRuning = false;
 
-				// ĞŞ¸´¶¯»­½áÊøºó±ß¾àÓĞĞ©¿ÕÏ¶£¬
+				// ä¿®å¤åŠ¨ç”»ç»“æŸåè¾¹è·æœ‰äº›ç©ºéš™ï¼Œ
 				boolean needFix = false;
 
 				if (imgLargeWidth) {
@@ -1290,14 +1290,14 @@ public class PhotoView extends ImageView {
 	}
 
 	/**
-	 * ÔÚPhotoViewÄÚ²¿»¹Ã»ÓĞÍ¼Æ¬µÄÊ±ºòÍ¬Ñù¿ÉÒÔµ÷ÓÃ¸Ã·½·¨
+	 * åœ¨PhotoViewå†…éƒ¨è¿˜æ²¡æœ‰å›¾ç‰‡çš„æ—¶å€™åŒæ ·å¯ä»¥è°ƒç”¨è¯¥æ–¹æ³•
 	 * <p>
 	 * </p>
-	 * ´ËÊ±²¢²»»á²¥·Å¶¯»­£¬µ±¸øPhotoViewÉèÖÃÍ¼Æ¬ºó»á×Ô¶¯²¥·Å¶¯»­¡£
+	 * æ­¤æ—¶å¹¶ä¸ä¼šæ’­æ”¾åŠ¨ç”»ï¼Œå½“ç»™PhotoViewè®¾ç½®å›¾ç‰‡åä¼šè‡ªåŠ¨æ’­æ”¾åŠ¨ç”»ã€‚
 	 * <p>
 	 * </p>
-	 * ÈôµÈ´ıÊ±¼ä¹ı³¤Ò²Ã»ÓĞ¸ø¿Ø¼şÉèÖÃÍ¼Æ¬£¬Ôò»áºöÂÔ¸Ã¶¯»­£¬ÈôÒªÔÙ´Î²¥·Å¶¯»­ÔòĞèÒªÖØĞÂµ÷ÓÃ¸Ã·½·¨
-	 * (µÈ´ıµÄÊ±¼äÄ¬ÈÏ500ºÁÃë£¬¿ÉÒÔÍ¨¹ısetMaxAnimFromWaiteTime(int)ÉèÖÃ×î´óµÈ´ıÊ±¼ä)
+	 * è‹¥ç­‰å¾…æ—¶é—´è¿‡é•¿ä¹Ÿæ²¡æœ‰ç»™æ§ä»¶è®¾ç½®å›¾ç‰‡ï¼Œåˆ™ä¼šå¿½ç•¥è¯¥åŠ¨ç”»ï¼Œè‹¥è¦å†æ¬¡æ’­æ”¾åŠ¨ç”»åˆ™éœ€è¦é‡æ–°è°ƒç”¨è¯¥æ–¹æ³•
+	 * (ç­‰å¾…çš„æ—¶é—´é»˜è®¤500æ¯«ç§’ï¼Œå¯ä»¥é€šè¿‡setMaxAnimFromWaiteTime(int)è®¾ç½®æœ€å¤§ç­‰å¾…æ—¶é—´)
 	 */
 	public void animaFrom(Info info) {
 		if (isInit) {
@@ -1365,11 +1365,11 @@ public class PhotoView extends ImageView {
 			mScaleCenter.set(mImgRect.left + mImgRect.width() / 2, mImgRect.top + mImgRect.height() / 2);
 			mRotateCenter.set(mScaleCenter);
 
-			// ½«Í¼Æ¬Ğı×ª»ØÕı³£Î»ÖÃ£¬ÓÃÒÔ¼ÆËã
+			// å°†å›¾ç‰‡æ—‹è½¬å›æ­£å¸¸ä½ç½®ï¼Œç”¨ä»¥è®¡ç®—
 			mAnimaMatrix.postRotate(-mDegrees, mScaleCenter.x, mScaleCenter.y);
 			mAnimaMatrix.mapRect(mImgRect, mBaseRect);
 
-			// Ëõ·Å
+			// ç¼©æ”¾
 			float scaleX = info.mImgRect.width() / mBaseRect.width();
 			float scaleY = info.mImgRect.height() / mBaseRect.height();
 			float scale = scaleX > scaleY ? scaleX : scaleY;
@@ -1448,10 +1448,10 @@ public class PhotoView extends ImageView {
 
 	public static class Info {
 
-		// ÄÚ²¿Í¼Æ¬ÔÚÕû¸öÊÖ»ú½çÃæµÄÎ»ÖÃ
+		// å†…éƒ¨å›¾ç‰‡åœ¨æ•´ä¸ªæ‰‹æœºç•Œé¢çš„ä½ç½®
 		public RectF mRect = new RectF();
 
-		// ¿Ø¼şÔÚ´°¿ÚµÄÎ»ÖÃ
+		// æ§ä»¶åœ¨çª—å£çš„ä½ç½®
 		public RectF mImgRect = new RectF();
 
 		public RectF mWidgetRect = new RectF();

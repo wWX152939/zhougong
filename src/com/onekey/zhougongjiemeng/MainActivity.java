@@ -3,6 +3,7 @@ package com.onekey.zhougongjiemeng;
 import mythware.common.LogUtils;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -11,6 +12,7 @@ import android.widget.AdapterView;
 import com.ab.activity.AbActivity;
 import com.ab.view.slidingmenu.SlidingMenu;
 import com.ab.view.titlebar.AbTitleBar;
+import com.onekey.ad.ContentADActivity;
 import com.onekey.leftfragment.GifFragment;
 import com.onekey.leftfragment.HomeFragment;
 import com.onekey.leftfragment.PictureFragment;
@@ -91,6 +93,9 @@ public class MainActivity extends AbActivity {
 					fragment = mGifFragment;
 					break;
 				case 3:
+					Intent intent = new Intent();
+					intent.setClass(MainActivity.this, ContentADActivity.class);
+					startActivity(intent);
 					return;
 				}
 				LogUtils.d("wzw postion:" + position +  " frag:" + fragment);
@@ -103,7 +108,7 @@ public class MainActivity extends AbActivity {
                 menu.showContent();
 			}
 		});
-		// menuÊÓÍ¼µÄFragmentÌí¼Ó
+		// menuè§†å›¾çš„Fragmentæ·»åŠ 
 		menu.setMenu(R.layout.sliding_menu_menu);
 		getFragmentManager().beginTransaction()
 				.replace(R.id.menu_frame, mMainMenuFragment).commit();

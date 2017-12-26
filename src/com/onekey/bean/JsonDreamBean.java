@@ -7,9 +7,9 @@ import android.content.Context;
 
 public class JsonDreamBean {
 	/**
-     * 读取assets下的txt文件，返回utf-8 String
+     * 璇诲彇assets涓嬬殑txt鏂囦欢锛岃繑鍥瀠tf-8 String
      * @param context
-     * @param fileName 不包括后缀
+     * @param fileName 涓嶅寘鎷悗缂�
      * @return
      */
     public static String readAssetsTxt(Context context,String fileName){
@@ -30,6 +30,6 @@ public class JsonDreamBean {
 //            throw new RuntimeException(e);
             e.printStackTrace();
         }
-        return "读取错误，请检查文件名";
+        return "璇诲彇閿欒锛岃妫�鏌ユ枃浠跺悕";
     }
 }

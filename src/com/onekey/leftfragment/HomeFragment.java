@@ -12,9 +12,9 @@ import com.onekey.zhougongjiemeng.R;
 import com.onekey.zhougongjiemeng.ZhouGongActivity;
 
 public class HomeFragment extends BaseFragment {
-	
-	public static final String DrawClass[] = new String[] {"ÈËÎïÀà", "¶¯ÎïÀà", "ÓéÀÖÀà", "×Ú½ÌÀà", "É½Ë®Àà", "½¨ÖşÀà", "¿Ö²ÀÀà", "Çé°®Àà"
-		, "Ö²ÎïÀà", "»î¶¯Àà", "ÎïÆ·Àà", "Éú»îÀà", "¼²²¡Àà", "×ÔÈ»Àà", "ÉíÌåÀà", "ÔË¶¯Àà", "Ê³ÎïÀà", "¹íÉñÀà"};
+
+	public static final String DrawClass[] = new String[] {"äººç‰©ç±»", "åŠ¨ç‰©ç±»", "å¨±ä¹ç±»", "å®—æ•™ç±»", "å±±æ°´ç±»", "å»ºç­‘ç±»", "ææ€–ç±»", "æƒ…çˆ±ç±»"
+		, "æ¤ç‰©ç±»", "æ´»åŠ¨ç±»", "ç‰©å“ç±»", "ç”Ÿæ´»ç±»", "ç–¾ç—…ç±»", "è‡ªç„¶ç±»", "èº«ä½“ç±»", "è¿åŠ¨ç±»", "é£Ÿç‰©ç±»", "é¬¼ç¥ç±»"};
 
 	private ListView mListView;
 	@Override

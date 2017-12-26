@@ -59,61 +59,61 @@ public class ZhouGongActivity extends AbActivity {
     private void initContent(int position) {
     	switch(position) {
 		case 0:
-			//ÈËÎïÀà
+			//äººç‰©ç±»
 			break;
 		case 1:
-			//¶¯ÎïÀà
+			//åŠ¨ç‰©ç±»
 			break;
 		case 2:
-			//ÓéÀÖÀà
+			//å¨±ä¹ç±»
 			break;
 		case 3:
-			//¶¯ÎïÀà
+			//åŠ¨ç‰©ç±»
 			break;
 		case 4:
-			//×Ú½ÌÀà
+			//å®—æ•™ç±»
 			break;
 		case 5:
-			//É½Ë®Àà
+			//å±±æ°´ç±»
 			break;
 		case 6:
-			//½¨ÖşÀà
+			//å»ºç­‘ç±»
 			break;
 		case 7:
-			//¿Ö²ÀÀà
+			//ææ€–ç±»
 			break;
 		case 8:
-			//Çé°®Àà
+			//æƒ…çˆ±ç±»
 			break;
 		case 9:
-			//"Ö²ÎïÀà", 
+			//"æ¤ç‰©ç±»", 
 			break;
 		case 10:
-			//"»î¶¯Àà",
+			//"æ´»åŠ¨ç±»",
 			break;
 		case 11:
-			// "ÎïÆ·Àà", 
+			// "ç‰©å“ç±»", 
 			break;
 		case 12:
-			//"Éú»îÀà",
+			//"ç”Ÿæ´»ç±»",
 			break;
 		case 13:
-			// "¼²²¡Àà", 
+			// "ç–¾ç—…ç±»", 
 			break;
 		case 14:
-			//"×ÔÈ»Àà", 
+			//"è‡ªç„¶ç±»", 
 			break;
 		case 15:
-			//"ÉíÌåÀà",
+			//"èº«ä½“ç±»",
 			break;
 		case 16:
-			// "ÔË¶¯Àà", 
+			// "è¿åŠ¨ç±»", 
 			break;
 		case 17:
-			//"Ê³ÎïÀà", "¹íÉñÀà"
+			//"é£Ÿç‰©ç±»", "é¬¼ç¥ç±»"
 			break;
 		case 18:
-			//"¹íÉñÀà"
+			//"é¬¼ç¥ç±»"
 			break;
 		}
 
@@ -146,7 +146,7 @@ public class ZhouGongActivity extends AbActivity {
 					@Override
 					public void onClick(View v) {
 						if (EditText.getText().toString().isEmpty()) {
-							AbToastUtil.showToast(ZhouGongActivity.this, "ÇëÊäÈë²éÑ¯¹Ø¼ü×Ö");
+							AbToastUtil.showToast(ZhouGongActivity.this, "è¯·è¾“å…¥æŸ¥è¯¢å…³é”®å­—");
 							return;
 						}
 						RequestDream.getInstance().getInfo(new CloudInterface() {
@@ -162,10 +162,10 @@ public class ZhouGongActivity extends AbActivity {
 										mDreamFragment.setDreamBean(DreamBean);
 									}
 								} else if (arg0 == CloudResponseStatus.ErrorNetwork) {
-									AbToastUtil.showToast(ZhouGongActivity.this, "ÍøÂçÒì³£");
+									AbToastUtil.showToast(ZhouGongActivity.this, "ç½‘ç»œå¼‚å¸¸");
 									mDreamFragment.setDreamBean(new DreamBean());
 								} else {
-									AbToastUtil.showToast(ZhouGongActivity.this, "²Ù×÷Òì³£");
+									AbToastUtil.showToast(ZhouGongActivity.this, "æ“ä½œå¼‚å¸¸");
 									mDreamFragment.setDreamBean(new DreamBean());
 								}
 								
